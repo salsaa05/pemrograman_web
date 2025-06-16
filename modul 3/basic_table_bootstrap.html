@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contoh Tabel Bootstrap Lengkap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <!-- Bootstrap 3.4.1 CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom Style untuk class yang belum ada di Bootstrap 3 -->
+    <style>
+        .table-dark {
+            color: #fff;
+            background-color: #343a40;
+        }
+
+        .table-dark th,
+        .table-dark td,
+        .table-dark thead th {
+            border-color: #454d55;
+        }
+
+        .table-dark tbody tr:hover {
+            background-color: #23272b;
+        }
+
+        .table-borderless th,
+        .table-borderless td,
+        .table-borderless thead th,
+        .table-borderless tbody + tbody {
+            border: 0;
+        }
+
+        .table-sm th,
+        .table-sm td {
+            padding: .3rem;
+        }
+
+        .table-responsive {
+            display: block;
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Contoh Tabel</h2>
+
+    <!-- 1. Tabel dasar -->
+    <h3>.table</h3>
+    <table class="table">
+        <thead>
+            <tr><th>Nama Depan</th><th>Nama Belakang</th><th>Email</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Salsa</td><td>Oktavia Putri</td><td>salsaoktavia496@gmail.com</td></tr>
+            <tr><td>Islamiyah</td><td>Dinar Kinanti</td><td>islamiyah.kinanti@mail.com</td></tr>
+        </tbody>
+    </table>
+
+    <!-- 2. Tabel striped -->
+    <h3>.table-striped</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr><th>Nama Depan</th><th>Nama Belakang</th><th>Email</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Elina</td><td>Nurhaliza</td><td>elina.nurhaliza@mail.com</td></tr>
+            <tr><td>Salsa</td><td>Oktavia Putri</td><td>salsaoktavia496@gmail.com</td></tr>
+        </tbody>
+    </table>
+
+    <!-- 3. Tabel bordered -->
+    <h3>.table-bordered</h3>
+    <table class="table table-bordered">
+        <thead>
+            <tr><th>Nama Depan</th><th>Nama Belakang</th><th>Email</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Islamiyah</td><td>Dinar Kinanti</td><td>islamiyah.kinanti@mail.com</td></tr>
+            <tr><td>Elina</td><td>Nurhaliza</td><td>elina.nurhaliza@mail.com</td></tr>
+        </tbody>
+    </table>
+
+    <!-- 4. Tabel hover -->
+    <h3>.table-hover</h3>
+    <table class="table table-hover">
+        <thead>
+            <tr><th>Nama Depan</th><th>Nama Belakang</th><th>Email</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Salsa</td><td>Oktavia Putri</td><td>salsaoktavia496@gmail.com</td></tr>
+            <tr><td>Islamiyah</td><td>Dinar Kinanti</td><td>islamiyah.kinanti@mail.com</td></tr>
+        </tbody>
+    </table>
+
+    <!-- 5. Tabel dark -->
+    <h3>.table-dark</h3>
+    <table class="table table-dark">
+        <thead>
+            <tr><th>Nama Depan</th><th>Nama Belakang</th><th>Email</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Elina</td><td>Nurhaliza</td><td>elina.nurhaliza@mail.com</td></tr>
+            <tr><td>Salsa</td><td>Oktavia Putri</td><td>salsaoktavia496@gmail.com</td></tr>
+        </tbody>
+    </table>
+
+    <!-- 6. Tabel borderless -->
+    <h3>.table-borderless</h3>
+    <table class="table table-borderless">
+        <thead>
+            <tr><th>Nama Depan</th><th>Nama Belakang</th><th>Email</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Islamiyah</td><td>Dinar Kinanti</td><td>islamiyah.kinanti@mail.com</td></tr>
+            <tr><td>Elina</td><td>Nurhaliza</td><td>elina.nurhaliza@mail.com</td></tr>
+        </tbody>
+    </table>
+
+    <!-- 7. Tabel kecil (small) -->
+    <h3>.table-sm</h3>
+    <table class="table table-sm">
+        <thead>
+            <tr><th>Nama Depan</th><th>Nama Belakang</th><th>Email</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Salsa</td><td>Oktavia Putri</td><td>salsaoktavia496@gmail.com</td></tr>
+            <tr><td>Islamiyah</td><td>Dinar Kinanti</td><td>islamiyah.kinanti@mail.com</td></tr>
+        </tbody>
+    </table>
+
+    <!-- 8. Tabel dalam responsive -->
+    <h3>.table-responsive</h3>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr><th>Nama Depan</th><th>Nama Belakang</th><th>Email</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Elina</td><td>Nurhaliza</td><td>elina.nurhaliza@mail.com</td></tr>
+                <tr><td>Salsa</td><td>Oktavia Putri</td><td>salsaoktavia496@gmail.com</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
