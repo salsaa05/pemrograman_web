@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Latihan Manipulasi DOM</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <style>
+        body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+        #judul { color: steelblue; } 
+        button { padding: 10px 15px; font-size: 16px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1 id="judul">Halo Salsa!</h1> 
+    <button onclick="ubahTeks()">Selanjutnya</button>
+    <script>
+        function ubahTeks() { 
+            var elemenJudul = document.getElementById("judul"); 
+            elemenJudul.innerHTML = "Selamat Datang Dipraktikum Javascript"; 
+            elemenJudul.style.color = "crimson"; 
+            elemenJudul.style.fontSize = "36px";
+        }
+    </script>
+</body>
+</html>
